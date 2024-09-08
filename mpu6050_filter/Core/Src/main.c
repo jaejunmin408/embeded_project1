@@ -478,7 +478,7 @@ void StartTask03(void *argument)
 	  Deg_Y = atan(Ac_X1 / sqrt(pow(Ac_Y1, 2) + pow(Ac_Z1, 2))) * 180.0 / M_PI;
 	  Deg_Z = atan(sqrt(pow(Ac_X1, 2) + pow(Ac_Y1, 2)) / Ac_Z1) * 180.0 / M_PI;
 
-	  /* Complementary filter test */
+	  /* Complementary filter tes */
 	  Deg_XC = 0.98 * (Deg_XC + Gy_X1 * 0.005) + 0.02 * Deg_X;
 	  Deg_YC = 0.98 * (Deg_YC + Gy_Y1 * 0.005) + 0.02 * Deg_Y;
 	  Deg_ZC = 0.98 * Deg_ZC + 0.02 * Deg_Z;
